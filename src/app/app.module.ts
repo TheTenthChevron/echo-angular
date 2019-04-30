@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 
 import { AppRoutingModule, routingComponents} from './app-routing.module';
+import { AdminComponent } from './admin/admin.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AppRoutingModule, routingComponents} from './app-routing.module';
     routingComponents,
     FooterComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    AdminComponent,
+    UserComponent
   ],
   imports: [
     NgbModule,

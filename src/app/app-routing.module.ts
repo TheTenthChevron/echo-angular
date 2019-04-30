@@ -9,6 +9,8 @@ import {BecomeAProComponent} from './become-a-pro/become-a-pro.component';
 import {LoginComponent} from './login/login.component';
 import {AboutComponent} from './about/about.component';
 import {HomeComponent} from './home/home.component';
+import {AdminComponent} from './admin/admin.component';
+import {UserComponent} from './user/user.component';
 
 const routes: Routes = [
   { path: 'cleaning', component: CleaningComponent },
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'about', component: AboutComponent },
   { path: 'home', component: HomeComponent },
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+  {path: 'user', component: UserComponent},
+  {path: 'admin', component: AdminComponent}
 ];
 
 @NgModule({
