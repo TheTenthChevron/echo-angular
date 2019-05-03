@@ -12,6 +12,9 @@ import { AppRoutingModule, routingComponents} from './app-routing.module';
 import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import { LogService} from './log.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,9 +28,10 @@ import { UserComponent } from './user/user.component';
   imports: [
     NgbModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

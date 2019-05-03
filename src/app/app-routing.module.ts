@@ -1,4 +1,4 @@
-import {Component, NgModule} from '@angular/core';
+import {NgModule} from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {CleaningComponent} from './cleaning/cleaning.component';
 import {OrganizationComponent} from './organization/organization.component';
@@ -23,8 +23,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent },
-  {path: 'user', component: UserComponent},
-  {path: 'admin', component: AdminComponent}
+  { path: 'user', component: UserComponent},
+  { path: 'admin', component: AdminComponent}
 ];
 
 @NgModule({
@@ -41,5 +41,7 @@ export const routingComponents = [
                                   BecomeAProComponent,
                                   LoginComponent,
                                   AboutComponent,
-                                  HomeComponent
+                                  HomeComponent,
+                                  UserComponent,
+                                  AdminComponent
                                   ];
